@@ -5,10 +5,10 @@ Valida, formatea y genera **RUT chileno** en [V](https://vlang.io). Sin dependen
 import rutcl
 
 fn main() {
-	println(rut.is_valid('12.345.678-5')) // true
-	println(rut.is_valid('12.345.678-4')) // false
+	println(rutcl.is_valid('12.345.678-5')) // true
+	println(rutcl.is_valid('12.345.678-4')) // false
 
-	r := rut.parse('123456785')!
+	r := rutcl.parse('123456785')!
 	println(r.format())            // 12.345.678-5
 	println(r.format(dots: false)) // 12345678-5
 	println(r.mask())              // **.***.678-5
