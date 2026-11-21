@@ -2,7 +2,7 @@
 Valida, formatea y genera **RUT chileno** en [V](https://vlang.io). Sin dependencias.
 
 ```v
-import rutcl
+import trobukan.rutcl
 
 fn main() {
 	println(rutcl.is_valid('12.345.678-5')) // true
